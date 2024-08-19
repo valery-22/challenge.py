@@ -1,0 +1,10 @@
+while True:
+    print("HIGH SCORE TABLE")
+    print()
+    initials = input("Input your initials > ").upper()
+    score = input("Input your score >")
+    print()
+    f = open("high.score","a+")
+    f.write(f"{initials} {score} ")
+    f.close()
+    print("Added to high score table.")
